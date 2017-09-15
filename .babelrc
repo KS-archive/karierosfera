@@ -5,6 +5,7 @@
     "stage-1"
   ],
   "plugins": [
+    "transform-decorators-legacy",
     "lodash",
     "syntax-dynamic-import",
     "babel-plugin-styled-components"

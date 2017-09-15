@@ -21,11 +21,18 @@ import reducers from './reducers';
 
 // Components
 import Nav from './components/Nav/Nav';
-import Home from './components/Home/Home';
-import SecondPage from './components/SecondPage/SecondPage';
+
+// Views
+import Contact from './views/Contact/Contact';
+import Faq from './views/Faq/Faq';
+import Partners from './views/Partners/Partners';
+import Ambasadors from './views/Ambasadors/Ambasadors';
+import Edition2018 from './views/Edition2018/Edition2018';
+import Edition2017 from './views/Edition2017/Edition2017';
+import Home from './views/Home/Home';
 
 // Main styles import.
-import './scss/global.scss';
+import { colorPalette } from './utils/constants/styles';
 
 // Middleware
 /* eslint-disable no-underscore-dangle */
@@ -39,28 +46,11 @@ const store = createStoreWithMiddleware(
 // Needed for onTouchTap (Material UI)
 injectTapEventPlugin();
 
-// DYNAMIC IMPORT SCHEMA
-// import('./components/SecondPage/SecondPage').then((lazy) => {
-//   console.log(lazy.default);
-//   return lazy.default;
-// }).catch((err) => {
-//   console.error(err);
-// });
-
 const muiTheme = getMuiTheme({
-  palette: {
-    primary1Color: '#3F51B5',
-    primary2Color: '#303F9F',
-    primary3Color: '#C5CAE9',
-    accent1Color: '#4CAF50',
-    accent2Color: '#BDBDBD',
-    accent3Color: '#757575',
-    textColor: '#212121',
-    pickerHeaderColor: '#3F51B5',
-  },
+  palette: colorPalette,
   button: {
     height: 50,
-    minwidth: 190,
+    minwidth: 160,
   },
 });
 
@@ -71,7 +61,12 @@ ReactDOM.render(
         <div>
           <Nav />
           <Switch>
-            <Route path="/secondpage" component={SecondPage} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/faq" component={Faq} />
+            <Route path="/partnerzy" component={Partners} />
+            <Route path="/program_ambasadorski" component={Ambasadors} />
+            <Route path="/edycja2018" component={Edition2018} />
+            <Route path="/edycja2017" component={Edition2017} />
             <Route path="/" component={Home} />
           </Switch>
         </div>

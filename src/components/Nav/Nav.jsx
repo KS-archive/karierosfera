@@ -1,25 +1,24 @@
-// React and React.Component
-import React from 'react';
+import React, { Component } from 'react';
+import MediaQuery from 'react-responsive';
+import MobileNav from './MobileNav/MobileNav';
+import DesktopNav from './DesktopNav/DesktopNav';
+import StyledAppBar from './Nav_styles';
 
-// Material UI
-import AppBar from 'material-ui/AppBar';
-import FlatButton from 'material-ui/FlatButton';
-
-// Navigation link
-import { Link } from 'react-router-dom';
-
-// Stylesheets
-import styles from './nav.scss';
-
-export default () => (
-  <AppBar
-    title={<span>React starter</span>}
-    className={styles.navbar}
-    iconElementRight={
-      <span>
-        <Link to="/"><FlatButton label="Home" labelStyle={{ color: '#fff' }} /></Link>
-        <Link to="/secondpage"><FlatButton label="Second Page" labelStyle={{ color: '#fff' }} /></Link>
-      </span>
-    }
-  />
+const IconElementRight = () => (
+  <span>
+    <MediaQuery minWidth={1100}><DesktopNav /></MediaQuery>
+    <MediaQuery maxWidth={1099}><MobileNav /></MediaQuery>
+  </span>
 );
+
+export default class Nav extends Component {
+  render() {
+    return (
+      <StyledAppBar
+        title={<img src="/img/logo-biale.png" alt="Logo Stowarzyszenia WIGGOR" />}
+        showMenuIconButton={false}
+        iconElementRight={<IconElementRight handleSelect={this.handleSelect} />}
+      />
+    );
+  }
+}

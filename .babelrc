@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "react",
+    "env",
+    "stage-1"
+  ],
+  "plugins": [
+    "lodash",
+    "syntax-dynamic-import",
+    "babel-plugin-styled-components"
+  ]
+}

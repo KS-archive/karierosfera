@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Slider from 'react-slick';
 import RaisedButton from 'material-ui/RaisedButton';
-import { appBarHeight, media } from '../../utils/constants/styles';
+import { appBarHeight, media } from '../../../utils/constants/styles';
 
 export const StyledSlider = styled(Slider)`
   overflow: hidden;

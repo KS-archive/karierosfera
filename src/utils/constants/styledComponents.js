@@ -13,4 +13,7 @@ export const Container = styled.div`
   ${media.sm`
     width: 90%;
   `}
+  ${media.xs`
+    width: 100%;
+  `}
 `;

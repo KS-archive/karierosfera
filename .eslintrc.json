@@ -20,6 +20,7 @@
       "no-underscore-dangle": "off",
       "array-callback-return": "off",
       "no-confusing-arrow": "off",
-      "react/forbid-prop-types":"off"
+      "react/forbid-prop-types":"off",
+      "max-len": "off"
     }
 }

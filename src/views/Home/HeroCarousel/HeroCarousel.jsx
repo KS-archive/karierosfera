@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { scroller } from 'react-scroll';
-import { slides } from '../../utils/content/strona_glowna';
+import { slides } from '../../../utils/content/strona_glowna';
 import { StyledSlider, Item, Header, Button } from './HeroCarousel_styles';
 
 export default class HeroCarousel extends Component {

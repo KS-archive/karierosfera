@@ -7,7 +7,11 @@ export default class DesktopNav extends Component {
   render() {
     return (
       <span>
-        {navigation.map(item => <Link to={item.path}><StyledFlatButton label={item.name} /></Link>)}
+        {navigation.map(item => (
+          <Link key={item.path} to={item.path}>
+            <StyledFlatButton label={item.name} />
+          </Link>
+        ))}
       </span>
     );
   }

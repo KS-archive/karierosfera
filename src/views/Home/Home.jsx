@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import HeroCarousel from '../../components/HeroCarousel/HeroCarousel';
-import { Header } from './Home_styles';
+import HeroCarousel from './HeroCarousel/HeroCarousel';
+import About from './About/About';
+import { Container } from '../../utils/constants/styledComponents';
 
 export default class Home extends Component {
   changeRoute = (route) => {
@@ -9,7 +10,12 @@ export default class Home extends Component {
 
   render() {
     return (
-      <HeroCarousel changeRoute={this.changeRoute} />
+      <div>
+        <HeroCarousel changeRoute={this.changeRoute} />
+        <Container>
+          <About />
+        </Container>
+      </div>
     );
   }
 }

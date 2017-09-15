@@ -11,14 +11,21 @@ export default class MobileNav extends Component {
   }
 
   render() {
+    const origin = { horizontal: 'right', vertical: 'top' };
+    const iconButtonElement = (
+      <StyledIconButton>
+        <i className="fa fa-bars" aria-hidden="true" />
+      </StyledIconButton>
+    );
+
     return (
       <StyledIconMenu
-        iconButtonElement={<StyledIconButton><i className="fa fa-bars" aria-hidden="true" /></StyledIconButton>}
-        anchorOrigin={{ horizontal: 'right', vertical: 'top' }}
-        targetOrigin={{ horizontal: 'right', vertical: 'top' }}
+        iconButtonElement={iconButtonElement}
+        anchorOrigin={origin}
+        targetOrigin={origin}
         onItemTouchTap={this.handleSelect}
       >
-        {navigation.map(item => <MenuItem value={item.path} primaryText={item.name} />)}
+        {navigation.map(item => <MenuItem key={item.path} value={item.path} primaryText={item.name} />)}
       </StyledIconMenu>
     );
   }

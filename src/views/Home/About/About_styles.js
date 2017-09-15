@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { colorPalette, media } from '../../../utils/constants/styles';
 
 export const Container = styled.div`
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +27,7 @@ export const ContentWrapper = styled.div`
 
 export const Image = styled.img`
   min-width: 150px;
+  max-width: 150px;
   ${media.sm`
     display: none;
   `}

@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import AppBar from 'material-ui/AppBar';
-import { colorPalette, appBarHeight } from '../../utils/constants/styles';
+import { appBarHeight } from '../../utils/constants/styles';
 
 export default styled(AppBar)`
   height: ${appBarHeight}px;
-  background-color: ${colorPalette.textColor} !important;
+  background-color: #000 !important;
 
   > div:first-child {
     display: flex;

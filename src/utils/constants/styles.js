@@ -5,7 +5,7 @@ export const colorPalette = {
   primary2Color: '#FF9800',
   primary3Color: '#EE9942',
   accent1Color: '#333333',
-  accent2Color: '#BDBDBD',
+  accent2Color: '#F2F2F2',
   accent3Color: '#757575',
   textColor: '#212121',
   pickerHeaderColor: '#EB9741',

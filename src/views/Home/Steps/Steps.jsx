@@ -1,25 +1,18 @@
 import React, { Component } from 'react';
-import { steps } from '../../../utils/content/strona_glowna';
-import { Container, Step, Icon, ContentWrapper, Title, Content } from './Steps_styles';
+import MediaQuery from 'react-responsive';
+import { Container, Title, DesktopImage, MobileImage } from './Steps_styles';
 
 export default class Steps extends Component {
-  renderStep = (step) => {
-    const { icon, title, content } = step;
-    return (
-      <Step key={icon}>
-        <Icon src={icon} />
-        <ContentWrapper>
-          <Title>{title}</Title>
-          <Content>{content}</Content>
-        </ContentWrapper>
-      </Step>
-    );
-  }
-
   render() {
     return (
       <Container>
-        {steps.map(step => this.renderStep(step))}
+        <Title>10 kroków do rozpoczęcia kariery</Title>
+        <MediaQuery minWidth={721}>
+          <DesktopImage src="/img/o_konkursie/10 kroków.svg" />
+        </MediaQuery>
+        <MediaQuery maxWidth={720}>
+          <MobileImage src="/img/o_konkursie/10 kroków mobile.svg" />
+        </MediaQuery>
       </Container>
     );
   }

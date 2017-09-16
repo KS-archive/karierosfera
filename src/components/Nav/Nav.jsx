@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MediaQuery from 'react-responsive';
 import MobileNav from './MobileNav/MobileNav';
 import DesktopNav from './DesktopNav/DesktopNav';
-import StyledAppBar from './Nav_styles';
+import { StyledAppBar, Filler } from './Nav_styles';
 
 const IconElementRight = () => (
   <span>
@@ -14,11 +14,14 @@ const IconElementRight = () => (
 export default class Nav extends Component {
   render() {
     return (
-      <StyledAppBar
-        title={<img src="/img/logo-biale.png" alt="Logo Stowarzyszenia WIGGOR" />}
-        showMenuIconButton={false}
-        iconElementRight={<IconElementRight handleSelect={this.handleSelect} />}
-      />
+      <div>
+        <StyledAppBar
+          title={<img src="/img/logo-biale.png" alt="Logo Stowarzyszenia WIGGOR" />}
+          showMenuIconButton={false}
+          iconElementRight={<IconElementRight handleSelect={this.handleSelect} />}
+        />
+        <Filler />
+      </div>
     );
   }
 }

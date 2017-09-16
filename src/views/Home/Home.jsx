@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import HeroCarousel from './HeroCarousel/HeroCarousel';
 import About from './About/About';
+import Stages from './Stages/Stages';
+import Awards from './Awards/Awards';
 import Steps from './Steps/Steps';
+import FirstStep from './FirstStep/FirstStep';
 import { Container } from '../../utils/constants/styledComponents';
 
 export default class Home extends Component {
@@ -15,7 +18,10 @@ export default class Home extends Component {
         <HeroCarousel changeRoute={this.changeRoute} />
         <Container>
           <About />
+          <Stages />
+          <Awards />
           <Steps />
+          <FirstStep />
         </Container>
       </div>
     );

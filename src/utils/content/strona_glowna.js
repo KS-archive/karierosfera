@@ -19,7 +19,7 @@ export const slides = [
   },
 ];
 
-export const steps = [
+export const stages = [
   {
     icon: '/img/etapy/1 etap rolok.png',
     title: 'Etap I - test internetowy',

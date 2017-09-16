@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { scroller } from 'react-scroll';
+import { animateScroll } from 'react-scroll';
 import { slides } from '../../../utils/content/strona_glowna';
 import { StyledSlider, Item, Header, Button } from './HeroCarousel_styles';
 
@@ -8,17 +8,18 @@ export default class HeroCarousel extends Component {
     if (link.includes('/')) {
       this.props.changeRoute(link);
     } else {
-      scroller.scrollTo(window.innerHeight);
+      animateScroll.scrollTo(window.innerHeight);
     }
   }
 
   renderSlide = (slide) => {
+    const { backgroundSrc, buttonLink, header, buttonLabel } = slide;
     return (
-      <Item backgroundSrc={slide.backgroundSrc} key={slide.buttonLink}>
-        <Header>{slide.header}</Header>
+      <Item backgroundSrc={backgroundSrc} key={buttonLink}>
+        <Header>{header}</Header>
         <Button
-          label={slide.buttonLabel}
-          onClick={() => { this.handleLink(slide.buttonLink); }}
+          label={buttonLabel}
+          onClick={() => { this.handleLink(buttonLink); }}
           primary
         />
       </Item>

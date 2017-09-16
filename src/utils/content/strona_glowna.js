@@ -36,3 +36,42 @@ export const stages = [
     content: 'Odwiedź Wrocław, aby wziąć udział w finałowym case study i Gali Finałowej.',
   },
 ];
+
+export const areas = [
+  {
+    icon: '/img/o_konkursie/prawo.svg',
+    name: 'Prawo',
+  },
+  {
+    icon: '/img/o_konkursie/marketing.svg',
+    name: 'Marketing',
+  },
+  {
+    icon: '/img/o_konkursie/bankowość.svg',
+    name: 'Bankowość',
+  },
+  {
+    icon: '/img/o_konkursie/analityka.svg',
+    name: 'Analityka',
+  },
+  {
+    icon: '/img/o_konkursie/rynki finansowe.svg',
+    name: 'Rynki finansowe',
+  },
+  {
+    icon: '/img/o_konkursie/IT.svg',
+    name: 'IT',
+  },
+  {
+    icon: '/img/o_konkursie/hr.svg',
+    name: 'HR',
+  },
+  {
+    icon: '/img/o_konkursie/nieruchomości.svg',
+    name: 'Nieruchomości',
+  },
+  {
+    icon: '/img/o_konkursie/podatki.svg',
+    name: 'Podatki',
+  },
+];

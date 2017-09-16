@@ -21,6 +21,7 @@ import reducers from './reducers';
 
 // Components
 import Nav from './components/Nav/Nav';
+import Footer from './components/Footer/Footer';
 
 // Views
 import Contact from './views/Contact/Contact';
@@ -69,6 +70,7 @@ ReactDOM.render(
             <Route path="/edycja2017" component={Edition2017} />
             <Route path="/" component={Home} />
           </Switch>
+          <Footer />
         </div>
       </BrowserRouter>
     </Provider>

@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import { Header } from './Edition2018_styles';
+import NewArea from './NewArea/NewArea';
+import FutureStages from './FutureStages/FutureStages';
+import { Container } from '../../utils/constants/styledComponents';
 
 export default class Edition2018 extends Component {
   render() {
     return (
-      <Header>
-        Hello World!
-      </Header>
+      <div>
+        <NewArea />
+        <Container>
+          <FutureStages />
+        </Container>
+      </div>
     );
   }
 }

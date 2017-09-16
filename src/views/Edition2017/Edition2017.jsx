@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { Header } from './Edition2017_styles';
+import Gallery from './Gallery/Gallery';
+import { Container } from '../../utils/constants/styledComponents';
 
 export default class Edition2017 extends Component {
   render() {
     return (
-      <Header>
-        Hello World!
-      </Header>
+      <Container>
+        <Gallery />
+      </Container>
     );
   }
 }

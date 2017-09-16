@@ -32,3 +32,30 @@ export const images = [
   '/img/galeria/IMG_1336.JPG',
   '/img/galeria/IMG_1342.JPG',
 ];
+
+export const partners = [
+  {
+    imageSrc: '/img/partnerzy2017/marketing.png',
+    name: 'Henkel',
+    area: 'Marketing',
+    description: 'Henkel działa na całym świecie, oferując zrównoważony i różnorodny portfel marek. Zajmuje wiodące pozycje rynkowe zarówno w sektorze dóbr konsumenckich jak i w sektorze przemysłowym dzięki silnym markom i innowacyjnym technologiom. W Polsce firma Henkel działa od 1990 roku, a jej wiodące marki w Polsce to Persil, E, Perwoll, Silan, Pur, Somat, Bref, Clin, Palette, Taft, Schauma, Gliss Kur, Fa, Syoss. A to wszystko w międzynarodowym środowisku, w zgranym zespole, w samym sercu warszawskiego Mokotowa.',
+  },
+  {
+    imageSrc: '/img/partnerzy2017/bi.png',
+    name: 'Bank Zachodni WBK',
+    area: 'Business Intelligence',
+    description: 'BZ WBK tworzy dziś silną i dynamiczną organizację, która pomaga rozwijać się wszystkim swoim interesariuszom: klientom, pracownikom, akcjonariuszom oraz społecznościom lokalnym. Skupiają grupę ponad 11 i pół tysiąca pracowników. Łączą doświadczenie z nowoczesnym podejściem do zarządzania finansami. W zarządzaniu firmą starają się stale się uczyć i rozwijać, a do pracowników podchodzić przede wszystkim z sympatią.',
+  },
+  {
+    imageSrc: '/img/partnerzy2017/audyt.png',
+    name: 'Ernst & Young',
+    area: 'Audyt',
+    description: 'EY to światowy lider w zakresie audytu, doradztwa podatkowego, doradztwa biznesowego oraz doradztwa transakcyjnego. Angażuje się w działania na rzecz lepszego funkcjonowania globalnej rzeczywistości. Wiedza, doświadczenie i świadczone przez firmę usługi przyczyniają się do budowy zaufania na rynkach kapitałowych oraz do stabilności gospodarek całego świata. Celem dla firmy jest pomoc w osiągnięciu pełnego potencjału ich klientom, pracownikom oraz szerokiemu gronu przedsiębiorców.',
+  },
+  {
+    imageSrc: '/img/partnerzy2017/prawo_podatki.png',
+    name: 'Olesiński i Wspólnicy',
+    area: 'Prawo i podatki',
+    description: 'Olesiński & Wspólnicy to obecnie zespół ponad 80 doradców, kilkanaście zespołów eksperckich, 4 miasta w Polsce i ponad 10 lat doradzania. Nasza filozofią jest Radość Doradzania. Jako doradcy jesteśmy częścią zespołu Klienta. Współpracujemy przy inspirujących projektach o tematach wykraczających poza ramy typowej porady prawnej. Rozwijamy się i nieustannie poszukujemy Pracowników. Priorytetem jest dla nas nawiązanie długotrwałej współpracy oraz stałe podnoszenie kwalifikacji i kompetencji.',
+  },
+];

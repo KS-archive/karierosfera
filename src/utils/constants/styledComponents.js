@@ -17,3 +17,13 @@ export const Container = styled.div`
     width: 100%;
   `}
 `;
+
+export const Title = styled.h2`
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.3;
+  ${media.xs`
+    padding: 0 20px;
+  `}
+`;

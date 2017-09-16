@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Slider from 'react-slick';
+import { Title } from '../../../utils/constants/styledComponents';
 import { colorPalette, media } from '../../../utils/constants/styles';
 
 export const Container = styled.div`
@@ -12,10 +13,12 @@ export const Container = styled.div`
   `}
 `;
 
-export const Title = styled.div`
-  margin-bottom: 40px;
-  font-size: 36px;
-  font-weight: 500;
+export const StyledTitle = Title.extend`
+  position: relative;
+  left: -30px;
+  ${media.xs`
+    left: -20px;
+  `}
 `;
 
 export const StyledSlider = styled(Slider)`
@@ -123,6 +126,6 @@ export const Image = styled.div`
   ${media.xs`
     width: ${imageWidthXs}vw;
     height: ${imageWidthXs * imageRatio}vw;
-    left: <12></12>vw;
+    left: 11vw;
   `}
 `;

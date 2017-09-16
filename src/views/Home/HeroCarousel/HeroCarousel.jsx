@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router';
 import { animateScroll } from 'react-scroll';
 import { slides } from '../../../utils/content/strona_glowna';
 import { StyledSlider, Item, Header, Button } from './HeroCarousel_styles';
 
+@withRouter
 export default class HeroCarousel extends Component {
   handleLink = (link) => {
     if (link.includes('/')) {
-      this.props.changeRoute(link);
+      this.props.history.push(link);
     } else {
       animateScroll.scrollTo(window.innerHeight);
     }

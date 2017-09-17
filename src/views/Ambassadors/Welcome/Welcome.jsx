@@ -30,7 +30,7 @@ export default class Welcome extends Component {
             </Text>
             <Subheader>Chcesz być jedną z nich?</Subheader>
             <List pointSrc="/img/dla_ambasadorow/listPoint.png">
-              {this.listItems.map(item => <Listitem>{item}</Listitem>)}
+              {this.listItems.map(item => <Listitem key={item}>{item}</Listitem>)}
             </List>
           </Content>
         </StyledContainer>

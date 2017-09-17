@@ -62,7 +62,7 @@ ReactDOM.render(
         <div>
           <Nav />
           <Switch>
-            <Route path="/contact" component={Contact} />
+            <Route path="/kontakt" component={Contact} />
             <Route path="/faq" component={Faq} />
             <Route path="/partnerzy" component={Partners} />
             <Route path="/program_ambasadorski" component={Ambassadors} />

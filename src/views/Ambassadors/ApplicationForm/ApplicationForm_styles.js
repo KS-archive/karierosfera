@@ -76,6 +76,10 @@ export const StyledCheckbox = styled(Checkbox)`
   ${media.sm`
     width: 100% !important;
   `}
+
+  label {
+    color: ${props => props.checked ? colorPalette.accent1Color : colorPalette.accent3Color} !important;
+  }
 `;
 
 export const CheckboxError = styled.div`

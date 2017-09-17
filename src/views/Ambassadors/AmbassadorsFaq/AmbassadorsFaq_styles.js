@@ -9,7 +9,19 @@ export const Container = styled.div`
   margin-top: 150px;
   border-top: 3px solid ${colorPalette.accent1Color};
   border-bottom: 3px solid ${colorPalette.primary1Color};
-  background-color: #f5f5f5;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  &::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("${props => props.background}") no-repeat center/cover;
+    opacity: 0.3;
+  }
 `;
 
 export const Title = styled.div`
@@ -60,7 +72,7 @@ export const Question = styled.div`
   box-sizing: border-box;
   width: 100%;
   padding: 15px 30px;
-  background-color: ${props => props.open ? colorPalette.primary1Color : colorPalette.accent1Color};
+  background-color: ${props => props.open ? colorPalette.accent1Color : colorPalette.primary1Color};
   font-size: 18px;
   line-height: 1.3;
   font-weight: 400;
@@ -70,8 +82,9 @@ export const Question = styled.div`
 export const Answer = styled.div`
   display: ${props => props.open ? 'block' : 'none'};
   box-sizing: border-box;
-  border: 1px solid ${colorPalette.primary1Color};
+  border: 1px solid ${colorPalette.accent1Color};
   padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;

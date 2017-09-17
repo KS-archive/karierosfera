@@ -26,6 +26,7 @@ export default class ApplicationForm extends Component {
       email: { required: true },
       phone: { required: true },
       city: { required: true },
+      university: { required: true },
       fweWordsAbout: { required: true },
       acceprReg: { checked: 'Musisz wyrazić zgodę na przetwarzanie danych' },
     };

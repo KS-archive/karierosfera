@@ -74,6 +74,7 @@ export const Icon = styled.div`
   margin-bottom: 5px;
   background: url("${props => props.icon}") no-repeat center/cover;
   ${media.xs`
+    padding-left: 10px;
     width: 80px;
     height: 80px;
   `}
@@ -91,13 +92,19 @@ export const Profits = styled.div`
 
 export const Profit = styled.div`
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 23px;
   line-height: 1.4;
   font-weight: 400;
   color: ${colorPalette.accent1Color};
+  ${media.md`
+    font-size: 20px;
+  `}
+  ${media.sm`
+    font-size: 18px;
+  `}
   ${media.xs`
     margin-bottom: 15px;
-    padding-right: 15px;
+    padding-right: 10px;
     font-size: 16px;
   `}
 

@@ -35,7 +35,7 @@ export default class AmbassadorsFaq extends Component {
   render() {
     const { open } = this.state;
     return (
-      <Container>
+      <Container background="/img/dla_ambasadorow/stefan-stefancik-257625.jpg">
         <Title>Frequently asked questions</Title>
         <Wrapper>
           {questions.map((el, i) => this.renderCollapsible(el, i, open))}

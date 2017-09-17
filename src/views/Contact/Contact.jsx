@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { Header } from './Contact_styles';
+import Emails from './Emails/Emails';
 
 export default class Contact extends Component {
   render() {
     return (
-      <Header>
-        Hello World!
-      </Header>
+      <Emails />
     );
   }
 }

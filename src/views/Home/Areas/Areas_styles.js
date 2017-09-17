@@ -10,9 +10,13 @@ export const Container = styled.div`
 export const Title = styled.h2`
   box-sizing: border-box;
   margin-bottom: 30px;
+  padding-left: 40px;
   font-size: 36px;
   font-weight: 500;
   line-height: 1.3;
+  ${media.sm`
+    padding-left: 15px;
+  `}
   ${media.xs`
     padding: 0 20px;
   `}

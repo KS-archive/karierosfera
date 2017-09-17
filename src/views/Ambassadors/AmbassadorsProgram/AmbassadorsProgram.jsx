@@ -14,7 +14,7 @@ export default class AmbassadorsProgram extends Component {
   renderTile = (tile, index) => {
     const { name, icon } = tile;
     const src = (this.state.active === index)
-      ? `${icon.split('.')[0]} pomarańcz.${icon.split('.')[1]}`
+      ? `${icon.split('.')[0]} popiel.${icon.split('.')[1]}`
       : icon;
     return (
       <Tile

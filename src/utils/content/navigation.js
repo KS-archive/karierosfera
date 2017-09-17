@@ -25,6 +25,6 @@ export default [
   },
   {
     name: 'Kontakt',
-    path: '/contact',
+    path: '/kontakt',
   },
 ];

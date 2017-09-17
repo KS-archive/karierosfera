@@ -2,15 +2,26 @@ import React, { Component } from 'react';
 import { Container, StyledContainer, Buttons, Button, Content, Header, Text, Subheader, List, Listitem } from './Welcome_styles';
 
 export default class Welcome extends Component {
+  listItems = ['Zdobądź doświadczenie', 'Rozwiń umiejętności', 'Odbierz nagrody', 'Podrasuj CV', 'Rozkręć swoją karierę'];
+
+  renderButton = (label, type) => (
+    <Button
+      primary={type === 'primary'}
+      secondary={type === 'secondary'}
+      label={label}
+      onClick={() => { this.props.scrollTo(label); }}
+    />
+  );
+
   render() {
     return (
       <Container background="/img/dla_ambasadorow/1804.jpg">
         <StyledContainer>
           <Buttons>
-            <Button primary label="Program Ambasadorski" />
-            <Button primary label="Korzyści" />
-            <Button primary label="FAQ" />
-            <Button secondary label="Zapisz się" />
+            {this.renderButton('Program Ambasadorski', 'primary')}
+            {this.renderButton('Korzyści', 'primary')}
+            {this.renderButton('FAQ', 'primary')}
+            {this.renderButton('Zapisz się', 'secondary')}
           </Buttons>
           <Content>
             <Header>Cześć!</Header>
@@ -19,11 +30,7 @@ export default class Welcome extends Component {
             </Text>
             <Subheader>Chcesz być jedną z nich?</Subheader>
             <List pointSrc="/img/dla_ambasadorow/listPoint.png">
-              <Listitem>Zdobądź doświadczenie</Listitem>
-              <Listitem>Rozwiń umiejętności</Listitem>
-              <Listitem>Odbierz nagrody</Listitem>
-              <Listitem>Podrasuj CV</Listitem>
-              <Listitem>Rozkręć swoją karierę</Listitem>
+              {this.listItems.map(item => <Listitem>{item}</Listitem>)}
             </List>
           </Content>
         </StyledContainer>

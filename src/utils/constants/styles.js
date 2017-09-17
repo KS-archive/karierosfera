@@ -45,3 +45,10 @@ export const media = {
 };
 
 export const appBarHeight = 80;
+
+export const inputStyle = {
+  floatingLabelStyle: { color: colorPalette.accent3Color },
+  floatingLabelFocusStyle: { fontWeight: 700, color: colorPalette.primary1Color },
+  floatingLabelShrinkStyle: { fontWeight: 700, color: colorPalette.primary1Color },
+  style: { fontWeight: 400 },
+};

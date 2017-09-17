@@ -3,7 +3,7 @@ import ReactHtmlParser from 'react-html-parser';
 import { icons, profits } from '../../../utils/content/ambasadorzy';
 import { Container, Title, Wrapper, Icons, Icon, Profits, Profit } from './Benefits_styles';
 
-export default class Ambassadors extends Component {
+export default class Benefits extends Component {
   render() {
     return (
       <Container background="/img/dla_ambasadorow/1690.jpg">

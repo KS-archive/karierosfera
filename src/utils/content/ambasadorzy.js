@@ -69,3 +69,43 @@ export const profits = [
   `<span><strong>Rozwiń umiejętności</strong> z zakresu PR i marketingu</span>`,
   `<span><strong>Naucz się</strong> jak w praktyce organizować i zarządzać projektem</span>`,
 ];
+
+export const questions = [
+  {
+    question: 'Kto może zostać ambasadorem Karierosfery?',
+    answer: 'Terminarz edycji 2018 zostanie ogłoszony w listopadzie br.',
+  },
+  {
+    question: 'Co robi ambasador Karierosfery?',
+    answer: 'Terminarz edycji 2018 zostanie ogłoszony w listopadzie br.',
+  },
+  {
+    question: 'Ilu Ambasadorów działa w 1 mieście?',
+    answer: 'Terminarz edycji 2018 zostanie ogłoszony w listopadzie br.',
+  },
+  {
+    question: 'Kiedy działa Ambasador Karierosfery?',
+    answer: 'Terminarz edycji 2018 zostanie ogłoszony w listopadzie br.',
+  },
+  {
+    question: 'Czy potrzebne jest jakieś doświadczenie?',
+    answer: 'Terminarz edycji 2018 zostanie ogłoszony w listopadzie br.',
+  },
+  {
+    question: 'Co zrobić żeby zostać ambasadorem?',
+    answer: 'Terminarz edycji 2018 zostanie ogłoszony w listopadzie br.',
+  },
+];
+
+export const contact = [
+  {
+    icon: '/img/dla_ambasadorow/message.svg',
+    name: 'Anna Zdyb',
+    email: 'anna.zdyb@wiggor.pl',
+  },
+  {
+    icon: '/img/dla_ambasadorow/message.svg',
+    name: 'Ola Ciechoń',
+    email: 'aleksandra.cichon@wiggor.pl',
+  },
+];

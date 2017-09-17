@@ -51,86 +51,58 @@ export const Title = styled.div`
 `;
 
 export const Wrapper = MainContainer.extend`
-  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 60px 0;
+`;
+
+export const Icons = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 60px 0;
-  ${media.sm`
-    flex-direction: row;
-  `}
-  ${media.xs`
-    flex-direction: column;
-  `}
-`;
-
-export const ProgramTiles = styled.div`
-  display: flex;
-  ${media.sm`
-    flex-direction: column;
-  `}
-  ${media.xs`
-    flex-flow: row wrap;
-    justify-content: center;
-  `}
-`;
-
-export const Tile = styled.img`
-  width: 265px;
-  height: 265px;
+  justify-content: space-between;
+  width: 100px;
   margin-right: 30px;
+  ${media.xs`
+    margin-right: 15px;
+  `}
+`;
+
+export const Icon = styled.div`
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5px;
+  background: url("${props => props.icon}") no-repeat center/cover;
+  ${media.xs`
+    width: 80px;
+    height: 80px;
+  `}
 
   &:last-child {
-    margin-right: 0;
-  }
-
-  ${media.lg`
-    width: 200px;
-    height: 200px;
-  `}
-  ${media.md`
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-  `}
-  ${media.sm`
-    margin-right: 0;
-  `}
-  ${media.xs`
-    width: 180px;
-    height: 180px;
-  `}
-
-  @media (max-width: 450px) {
-    width: 150px;
-    height: 150px;
-  }
-
-  @media (max-width: 390px) {
-    width: 130px;
-    height: 130px;
+    margin-bottom: 0;
   }
 `;
 
-export const Content = styled.p`
-  box-sizing: border-box;
-  padding: 60px 40px;
-  font-size: 20px;
-  font-weight: 400;
+export const Profits = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+export const Profit = styled.div`
+  margin-bottom: 20px;
+  font-size: 18px;
   line-height: 1.4;
-  text-align: justify;
+  font-weight: 400;
   color: ${colorPalette.accent1Color};
-  ${media.md`
-    padding: 50px 40px;
-    font-size: 18px;
-  `}
   ${media.xs`
-    padding: 20px 15px;
+    margin-bottom: 15px;
+    padding-right: 15px;
     font-size: 16px;
   `}
 
-  br {
-    line-height: 30px;
+  &:last-child {
+    margin-bottom: 0;
   }
 
   strong {

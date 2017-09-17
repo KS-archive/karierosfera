@@ -27,7 +27,7 @@ import Footer from './components/Footer/Footer';
 import Contact from './views/Contact/Contact';
 import Faq from './views/Faq/Faq';
 import Partners from './views/Partners/Partners';
-import Ambasadors from './views/Ambasadors/Ambasadors';
+import Ambassadors from './views/Ambassadors/Ambassadors';
 import Edition2018 from './views/Edition2018/Edition2018';
 import Edition2017 from './views/Edition2017/Edition2017';
 import Home from './views/Home/Home';
@@ -65,7 +65,7 @@ ReactDOM.render(
             <Route path="/contact" component={Contact} />
             <Route path="/faq" component={Faq} />
             <Route path="/partnerzy" component={Partners} />
-            <Route path="/program_ambasadorski" component={Ambasadors} />
+            <Route path="/program_ambasadorski" component={Ambassadors} />
             <Route path="/edycja2018" component={Edition2018} />
             <Route path="/edycja2017" component={Edition2017} />
             <Route path="/" component={Home} />

@@ -34,6 +34,7 @@ import Home from './views/Home/Home';
 
 // Main styles import.
 import { colorPalette } from './utils/constants/styles';
+import './styles.css';
 
 // Middleware
 /* eslint-disable no-underscore-dangle */

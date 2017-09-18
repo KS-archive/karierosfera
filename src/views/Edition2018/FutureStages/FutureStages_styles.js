@@ -58,14 +58,8 @@ export const IconWrapper = styled.div`
   justify-content: center;
   width: 150px;
   height: 150px;
-  margin-bottom: 20px;
   border-radius: 100%;
-  border: 1px solid ${colorPalette.accent1Color};
   transition: all 0.3s;
-
-  &:hover {
-    border: 1px solid ${colorPalette.primary1Color};
-  }
 `;
 
 export const Icon = styled.div`

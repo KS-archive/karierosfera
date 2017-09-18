@@ -27,6 +27,10 @@ export const Subtitle = styled.div`
   line-height: 1.3;
   text-transform: uppercase;
   color: #bbb;
+  ${media.sm`
+    padding: 0 15px;
+    text-align: center;
+  `}
 `;
 
 export const Email = styled.a`

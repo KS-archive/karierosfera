@@ -7,7 +7,7 @@ export default class Partners extends Component {
   renderPartner = (partner) => {
     const { imageSrc, name, area, description } = partner;
     return (
-      <Partner>
+      <Partner key={name}>
         <Logo src={imageSrc} alt={`Logo firmy ${name}`} />
         <Name>{name}</Name>
         <Area>{area}</Area>

@@ -36,8 +36,16 @@ export default class FirstStep extends Component {
             </Content>
           </ContentWrapper>
           <Images>
-            <Image src="/img/o_konkursie/facebook.svg" alt="Ikona facebooka" />
-            <Image src="/img/o_konkursie/insta.svg" alt="Ikona instagrama" />
+            <Image
+              src="/img/o_konkursie/facebook.svg"
+              alt="Ikona facebooka"
+              onClick={() => { window.open('https://pl-pl.facebook.com/karierosfera/', '_blank'); }}
+            />
+            <Image
+              src="/img/o_konkursie/insta.svg"
+              alt="Ikona instagrama"
+              onClick={() => { window.open('https://www.instagram.com/wiggor.pl/', '_blank'); }}
+            />
           </Images>
         </Head>
         <Form>

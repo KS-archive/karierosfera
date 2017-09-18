@@ -27,7 +27,7 @@ export default class Faq extends Component {
       <Collapsible key={index}>
         <Question open={open} onClick={() => { this.handleOpen(index); }}>{question}</Question>
         <Answer open={open}>
-          {answer.split('\n').map(i => <div>{i}</div>)}
+          {answer.split('\n').map(i => <div key={i}>{i}</div>)}
         </Answer>
       </Collapsible>
     );

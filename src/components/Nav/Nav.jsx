@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router';
 import MediaQuery from 'react-responsive';
 import MobileNav from './MobileNav/MobileNav';
 import DesktopNav from './DesktopNav/DesktopNav';
@@ -11,12 +12,27 @@ const IconElementRight = () => (
   </span>
 );
 
+@withRouter
 export default class Nav extends Component {
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.location !== this.props.location) {
+      window.scrollTo(0, 0);
+    }
+  }
+
   render() {
+    const titleImg = (
+      <img
+        src="/img/logo-biale.png"
+        alt="Logo Stowarzyszenia WIGGOR"
+        onClick={() => { this.props.history.push('/'); }}
+      />
+    );
+
     return (
       <div>
         <StyledAppBar
-          title={<img src="/img/logo-biale.png" alt="Logo Stowarzyszenia WIGGOR" />}
+          title={titleImg}
           showMenuIconButton={false}
           iconElementRight={<IconElementRight handleSelect={this.handleSelect} />}
         />

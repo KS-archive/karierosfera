@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import Emails from './Emails/Emails';
+import ContactForm from './ContactForm/ContactForm';
 
 export default class Contact extends Component {
   render() {
     return (
-      <Emails />
+      <div>
+        <Emails />
+        <ContactForm />
+      </div>
     );
   }
 }

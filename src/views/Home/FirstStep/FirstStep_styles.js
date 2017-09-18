@@ -49,6 +49,7 @@ export const Image = styled.img`
   max-width: 60px;
   min-height: 60px;
   max-height: 60px;
+  cursor: pointer;
   ${media.sm`
     display: none;
   `}

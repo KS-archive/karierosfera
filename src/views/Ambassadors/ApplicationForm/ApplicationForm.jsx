@@ -55,6 +55,13 @@ export default class ApplicationForm extends Component {
     if (errors[stateName]) {
       errors[stateName] = null;
     }
+    if (stateName === 'inOrganization') {
+      if (!this.state.inOrganization) {
+        this.toValidate.organizationName = { required: true };
+      } else {
+        delete this.toValidate.organizationName;
+      }
+    }
     this.setState({ [stateName]: !this.state[stateName], errors });
   }
 

@@ -17,6 +17,7 @@ export const StyledAppBar = styled(AppBar)`
 
     > img {
       height: ${appBarHeight - 15}px;
+      cursor: pointer;
     }
   }
 

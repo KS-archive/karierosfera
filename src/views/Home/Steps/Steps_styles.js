@@ -2,11 +2,15 @@ import styled from 'styled-components';
 import { colorPalette } from '../../../utils/constants/styles';
 
 export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   padding: 90px 0;
 `;
 
 export const Title = styled.h2`
+  align-self: flex-start;
   color: ${colorPalette.textColor};
   margin-bottom: 40px;
   padding: 0 15px;

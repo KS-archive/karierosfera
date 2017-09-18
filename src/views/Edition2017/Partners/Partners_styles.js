@@ -57,7 +57,6 @@ export const Partner = styled.div`
 
 export const Logo = styled.img`
   width: auto;
-  max-width: 90%;
   height: 140px;
   margin-bottom: 20px;
   ${media.md`

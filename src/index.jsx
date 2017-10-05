@@ -44,7 +44,7 @@ ga('require', 'eventTracker');
 ga('require', 'outboundLinkTracker');
 ga('require', 'urlChangeTracker');
 
-ga('send', 'pageview');GTM-NM7RXM
+ga('send', 'pageview');
 
 // Middleware
 /* eslint-disable no-underscore-dangle */

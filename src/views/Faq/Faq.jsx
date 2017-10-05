@@ -1,8 +1,16 @@
-import React, { Component } from 'react';
+﻿import React, { Component } from 'react';
 import questions from '../../utils/content/faq';
 import { Title } from '../../utils/constants/styledComponents';
 import { StyledContainer, Collapsible, Question, Answer } from './Faq_styles';
+import 'autotrack'
 
+ga('create', 'GTM-NM7RXM', 'auto');
+
+ga('require', 'eventTracker');
+ga('require', 'outboundLinkTracker');
+ga('require', 'urlChangeTracker');
+
+ga('send', 'pageview');
 export default class Faq extends Component {
   constructor(props) {
     super(props);

@@ -1,4 +1,4 @@
-// React
+﻿// React
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -35,6 +35,16 @@ import Home from './views/Home/Home';
 // Main styles import.
 import { colorPalette } from './utils/constants/styles';
 import './styles.css';
+
+//Google Analytics
+import 'autotrack'
+ga('create', 'GTM-NM7RXM', 'auto');
+
+ga('require', 'eventTracker');
+ga('require', 'outboundLinkTracker');
+ga('require', 'urlChangeTracker');
+
+ga('send', 'pageview');
 
 // Middleware
 /* eslint-disable no-underscore-dangle */

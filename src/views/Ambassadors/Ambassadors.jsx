@@ -7,6 +7,15 @@ import Benefits from './Benefits/Benefits';
 import AmbassadorsFaq from './AmbassadorsFaq/AmbassadorsFaq';
 import Contact from './Contact/Contact';
 import ApplicationForm from './ApplicationForm/ApplicationForm';
+import 'autotrack'
+
+//Google Analytics
+ga('create', 'GTM-NM7RXM', 'auto');
+ga('require', 'eventTracker');
+ga('require', 'outboundLinkTracker');
+ga('require', 'urlChangeTracker');
+
+ga('send', 'pageview');
 
 export default class Ambassadors extends Component {
   scrollTo = (name) => {

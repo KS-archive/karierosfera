@@ -50,10 +50,12 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
-    "history": "^4.7.2",
+    "chart.js": "^2.7.0",
     "lodash": "^4.17.4",
     "material-ui": "^0.19.3",
+    "history": "^4.7.2",
     "react": "^16.0.0",
+    "react-chartjs2": "^1.1.2",
     "react-collapsible": "^2.0.3",
     "react-dom": "^16.0.0",
     "react-ga": "^2.3.5",

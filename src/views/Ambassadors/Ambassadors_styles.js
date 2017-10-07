@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import { colorPalette, media } from '../../utils/constants/styles';
 import { Container } from '../../utils/constants/styledComponents';
 

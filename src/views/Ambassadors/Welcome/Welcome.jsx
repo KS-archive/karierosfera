@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, StyledContainer, Buttons, Button, Content, Header, Text, Subheader, List, Listitem } from './Welcome_styles';
 
 export default class Welcome extends Component {
-  listItems = ['Zdobądź doświadczenie', 'Rozwiń umiejętności', 'Odbierz nagrody', 'Podrasuj CV', 'Rozkręć swoją karierę'];
+  listItems = ['Zdobądź doświadczenie', 'Rozwiń umiejętności', 'Odbierz nagrody', 'Podrasuj CV', <strong>Rozkręć swoją karierę</strong>];
 
   renderButton = (label, type) => (
     <Button
@@ -24,9 +24,9 @@ export default class Welcome extends Component {
             {this.renderButton('Zapisz się', 'secondary')}
           </Buttons>
           <Content>
-            <Header>Cześć!</Header>
+            <Header>Zrób sobie Karierosferę!</Header>
             <Text>
-              Karierosfera to szansa nie tylko dla uczestników. Ze względu na ogólnopolską skalę projektu co roku korzystamy z pomocy Ambasadorów Karierosfery, którzy we współpracy ze sztabem konkursu koordynują jego organizacją w miastach partnerskich.
+              Karierosfera to ogólnopolski konkurs wiedzy biznesowej skierowany do studentów. Jego organizacja wymaga zaangażowania osób z kilkunastu miast Polski.
             </Text>
             <Subheader>Chcesz być jedną z nich?</Subheader>
             <List pointSrc="/img/dla_ambasadorow/listPoint.png">

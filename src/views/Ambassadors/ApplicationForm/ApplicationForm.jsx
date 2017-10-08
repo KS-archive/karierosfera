@@ -106,7 +106,7 @@ export default class ApplicationForm extends Component {
             this.renderTextField('Nazwa organizacji/koła', 'organizationName')
           }
           <StyledCheckbox
-            label="Wyrażam zgodę na przetwarzanie ... ham turducken jerky salami cupim pork flank ground round. Sirloin fatback burgdoggen cupim jerky shoulder pork pancetta beef corned beef."
+            label="Wyrażam zgodę na przetwarzanie przez Stowarzyszenie Studenckie WIGGOR z siedzibą we Wrocławiu, ul. Kamienna 57, 53-307 Wrocław, moich danych osobowych zawartych w formularzu zgłoszeniowym w celu i zakresie niezbędnym do przeprowadzenia procesu rekrutacji."
             checked={acceprReg}
             onCheck={() => this.handleChackboxChange('acceprReg')}
             fullWidth

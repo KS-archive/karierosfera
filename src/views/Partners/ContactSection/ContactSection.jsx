@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Container, Contact, ContactImage, TopLabel, BottomLabel, Label, Image} from './ContactSection_styles';
+import { withRouter } from 'react-router';
+import { Container, Contact, ContactImage, TopLabel, BottomLabel, Label, ImageContainer, Image } from './ContactSection_styles';
 
+@withRouter
 export default class ContactSection extends Component {
-
   render() {
     return (
       <Container>
@@ -10,8 +11,10 @@ export default class ContactSection extends Component {
           <TopLabel>Skontaktuj się z nami</TopLabel>
           <BottomLabel>Chętnie przedstawimy warunki współpracy</BottomLabel>
         </Contact>
-        <ContactImage>
-          <Image background="/img/partnerzy2017/003-chat.svg"></Image>
+        <ContactImage onClick={() => { this.props.history.push('/kontakt'); }}>
+          <ImageContainer>
+            <Image src="/img/partnerzy2017/003-chat.svg" />
+          </ImageContainer>
           <Label>Kontakt</Label>
         </ContactImage>
       </Container>

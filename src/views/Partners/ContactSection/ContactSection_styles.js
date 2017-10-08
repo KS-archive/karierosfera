@@ -6,55 +6,76 @@ export const Container = MainContainer.extend`
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  padding-top: 60px;
-  color: black;
   justify-content: center;
-  margin: 60px 0;
-  width: 70%;
-  margin-left: 15%;
+  margin: 120px 0 60px;
+  padding: 0 10%;
+  color: #000;
+  ${media.md`
+    flex-direction: column;
+  `};
 `;
 
 export const Contact = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
-`;
-
-export const ContactImage = styled.div`
-  width: 50%;
-  display: flex;
-  border: 3px solid ${colorPalette.primary1Color};
-  flex-direction: column;
-  background-color: white;
+  ${media.md`
+    align-items: center;
+  `};
 `;
 
 export const TopLabel = styled.div`
-  width: 250px;
-  display: flex;
-  margin: 20px 0;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  ${media.md`
+    text-align: center;
+  `};
 `;
 
 export const BottomLabel = styled.div`
   width: 250px;
-  display: flex;
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 1.4;
+  ${media.md`
+    margin-bottom: 20px;
+    text-align: center;
+  `};
 `;
 
-export const Image = styled.div`
+export const ContactImage = styled.div`
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  border: 3px solid ${colorPalette.primary1Color};
+  background-color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const ImageContainer = styled.div`
   display: flex;
-  font-size: 14px;
-  background: url(" ${props => props.background}") no-repeat center/contain;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 70px;
-  margin: 40px 0;
+  height: 200px;
+`;
+
+export const Image = styled.img`
+  width: 100px;
+  height: 100px;
 `;
 
 export const Label = styled.div`
   width: 100%;
+  height: calc(100% - 200px);
   display: flex;
-  font-size: 14px;
-  background-color: ${colorPalette.primary1Color};
-  padding: 20px 0;
-  color: white;
+  align-items: center;
   justify-content: center;
+  font-size: 18px;
+  background-color: ${colorPalette.primary1Color};
+  color: #fff;
 `;

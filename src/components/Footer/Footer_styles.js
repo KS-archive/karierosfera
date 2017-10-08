@@ -33,4 +33,8 @@ export const Logo = styled.img`
     margin-left: 0;
     max-height: 60px;
   `}
+
+  &:hover {
+    cursor: pointer;
+  }
 `;

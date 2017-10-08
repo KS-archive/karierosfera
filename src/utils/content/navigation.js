@@ -15,10 +15,10 @@ export default [
     name: 'Dla ambasadorów',
     path: '/program_ambasadorski',
   },
-  // {
-  //   name: 'Dla partnerów',
-  //   path: '/partnerzy',
-  // },
+  {
+    name: 'Dla partnerów',
+    path: '/partnerzy',
+  },
   {
     name: 'FAQ',
     path: '/faq',

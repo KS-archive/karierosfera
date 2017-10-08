@@ -1,11 +1,5 @@
 export const slides = [
   {
-    backgroundSrc: 'img/slider/partnerzy.jpg',
-    header: 'Wpisz karierosferę w plany na ten rok',
-    buttonLabel: 'Zostań partnerem',
-    buttonLink: '/partnerzy',
-  },
-  {
     backgroundSrc: 'img/slider/ambasadorzy.jpg',
     header: 'Dołącz do ogólnopolskiej grupy projektowej',
     buttonLabel: 'Program ambasadorski',

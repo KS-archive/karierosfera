@@ -3,14 +3,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // React Router
-import BrowserRouter from 'react-router-dom/BrowserRouter';
 import Route from 'react-router-dom/Route';
+import Router from 'react-router-dom/Router';
+import createBrowserHistory from 'history/createBrowserHistory';
 import Switch from 'react-router-dom/Switch';
 
 // Material UI
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+
+// Analitics
+import ReactGA from 'react-ga';
 
 // Redux
 import Provider from 'react-redux/lib/components/Provider';
@@ -56,10 +60,18 @@ const muiTheme = getMuiTheme({
   },
 });
 
+ReactGA.initialize('UA-106920408-1');
+const customHistory = createBrowserHistory();
+customHistory.listen((location) => {
+  window.scrollTo(0, 0);
+  ReactGA.set({ page: location.pathname });
+  ReactGA.pageview(location.pathname);
+});
+
 ReactDOM.render(
   <MuiThemeProvider muiTheme={muiTheme}>
     <Provider store={store}>
-      <BrowserRouter>
+      <Router history={customHistory}>
         <div>
           <Nav />
           <Switch>
@@ -73,6 +85,6 @@ ReactDOM.render(
           </Switch>
           <Footer />
         </div>
-      </BrowserRouter>
+      </Router>
     </Provider>
   </MuiThemeProvider>, document.querySelector('.container'));

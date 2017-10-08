@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import { Container as MainContainer } from '../../../utils/constants/styledComponents';
 import { Container, Head, Title, Content, Form, Input, Button } from './NewArea_styles';
 
@@ -16,7 +17,13 @@ export default class NewArea extends Component {
     if (!value.trim()) {
       this.setState({ error: 'Musisz cokolwiek zaproponować' });
     } else {
-      console.log('Wysłano');
+      axios.post(`${__ROOT_URL__}api/mail/newidea`, { value })
+        .then(() => {
+          this.setState({
+            value: '',
+            error: '',
+          });
+        });
     }
   }
 

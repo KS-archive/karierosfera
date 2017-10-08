@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import { Container, Head, ContentWrapper, Images, Image, Title, Content, Form, Input, Button } from './FirstStep_styles';
 
 export default class FirstStep extends Component {
@@ -15,7 +16,13 @@ export default class FirstStep extends Component {
     if (!value.trim()) {
       this.setState({ error: 'E-mail jest wymagany' });
     } else {
-      console.log('Wysłano');
+      axios.post(`${__ROOT_URL__}api/mail/newsletter`, { email: value })
+        .then(() => {
+          this.setState({
+            value: '',
+            error: '',
+          });
+        });
     }
   }
 

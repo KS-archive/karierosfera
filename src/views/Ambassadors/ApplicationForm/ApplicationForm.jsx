@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import validate from '../../../utils/validation';
 import { inputStyle } from '../../../utils/constants/styles';
 import { Container, Title, Wrapper, StyledTextField, StyledCheckbox, CheckboxError, Button } from './ApplicationForm_styles';
@@ -40,6 +41,22 @@ export default class ApplicationForm extends Component {
       values.organizationName = '';
     }
     console.log(values);
+    axios.post(`${__ROOT_URL__}api/mail/application`, values)
+      .then(() => {
+        this.setState({
+          firstname: '',
+          surname: '',
+          email: '',
+          phone: '',
+          city: '',
+          university: '',
+          inOrganization: false,
+          organizationName: '',
+          fweWordsAbout: '',
+          acceprReg: false,
+          errors: {},
+        });
+      });
   }
 
   handleTextFieldChange = (e, stateName) => {

@@ -30,7 +30,7 @@ export const programTiles = [
     `,
   },
   {
-    icon: '/img/dla_ambasadorow/system wsparcia2.svg',
+    icon: '/img/dla_ambasadorow/system wsparcia.svg',
     name: 'System wsparcia',
     content: `
        <span>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import validate from '../../../utils/validation';
 import { inputStyle } from '../../../utils/constants/styles';
 import { Container, Subtitle, Form, StyledTextField, Button } from './ContactForm_styles';
@@ -26,7 +27,16 @@ export default class ContactForm extends Component {
   handleSubmit = () => { validate(this, this.submit); }
 
   submit = (values) => {
-    console.log(values);
+    axios.post(`${__ROOT_URL__}api/mail/contact`, values)
+      .then(() => {
+        this.setState({
+          name: '',
+          email: '',
+          subject: '',
+          content: '',
+          errors: {},
+        });
+      });
   }
 
   handleTextFieldChange = (e, stateName) => {

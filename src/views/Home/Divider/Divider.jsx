@@ -7,7 +7,7 @@ export default class Divider extends Component {
     return (
       <Container>
         <MainContainer>
-          <Title>Zastanawiasz się czy Karierosfera jest dla Ciebie? Oczywiście że tak!</Title>
+          <Title>Zastanawiasz się, czy Karierosfera jest dla Ciebie? <br />Oczywiście, że tak!</Title>
           <Content>
             Nagrodą główną są płatne staże w renomowanych i cenionych firmach, dzięki którym laureaci zyskają ogromne możliwości rozwoju oraz zdobycia cennego doświadczenia. Przede wszystkim jednak mają okazję zaprezentować się przedstawicielom prestiżowych firm podczas Gali Finałowej Konkursu.
             <br />

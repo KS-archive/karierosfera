@@ -60,7 +60,7 @@ const muiTheme = getMuiTheme({
   },
 });
 
-ReactGA.initialize('UA-106920408-1');
+ReactGA.initialize('GTM-NM7RXM');
 const customHistory = createBrowserHistory();
 customHistory.listen((location) => {
   window.scrollTo(0, 0);

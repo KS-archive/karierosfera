@@ -21,7 +21,10 @@ export const TopLabel = styled.div`
 export const UserImage = styled.div`
   width: 100%;
   justify-content: left;
-  background: url(" ${props => props.background}") no-repeat center/contain;
+  background: url('img/sylwetka_uczestnika/uczestnik.svg') no-repeat center/contain;
   height: 550px;
   background-color: white;
+  ${media.sm`
+    background: url('img/sylwetka_uczestnika/uczestnik-mobile.svg') no-repeat center/contain;
+  `};
 `;

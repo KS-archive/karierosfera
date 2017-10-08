@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import { Container, Title, Companies, Logo} from './CompanySection_styles';
+import { companySection } from '../../../utils/content/partnerzy';
+import { Container, Title, Companies, Logo } from './CompanySection_styles';
 
 export default class CompanySection extends Component {
+  renderLogo = logoData => <Logo src={logoData.logo} />
 
   render() {
     return (
       <Container>
-        <Title>Co roku wspołpracujemy z renomowanymi firmami - dołącz do grona marek, które nam zaufały.</Title>
+        <Title>{companySection.title}</Title>
         <Companies>
-          <Logo background="/img/partnerzy2017/audyt.png" ></Logo><Logo background="/img/partnerzy2017/bi.png"></Logo><Logo background="/img/partnerzy2017/prawo_podatki.png"></Logo><Logo background="/img/partnerzy2017/marketing.png"></Logo>
+          {companySection.companies.map(this.renderLogo)}
         </Companies>
       </Container>
     );

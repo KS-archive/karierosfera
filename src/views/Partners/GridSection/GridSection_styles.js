@@ -5,48 +5,82 @@ import { media, colorPalette } from '../../../utils/constants/styles';
 export const Container = MainContainer.extend`
   box-sizing: border-box;
   display: flex;
-  align-items: center;
-  padding-top: 60px;
   flex-direction: column;
-  color: black;
-  margin-bottom: 40px;
+  align-items: center;
   justify-content: center;
+  padding: 60px 0 40px;
+  color: ${colorPalette.textColor};
 `;
 
 export const TopLabel = styled.div`
-  display: flex;
-  padding: 20px;
-  justify-content: left;
-  width: 75%;
+  align-self: flex-start;
+  padding-bottom: 10px;
+  font-size: 22px;
+  line-height: 1.3;
+  ${media.md`
+    align-self: center;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+  `};
 `;
 
 export const BottomLabel = styled.div`
-  display: flex;
-  padding-bottom: 20px;
-  justify-content: left;
-  width: 75%;
+  align-self: flex-start;
+  padding-bottom: 40px;
+  font-size: 22px;
+  line-height: 1.3;
+  ${media.md`
+    align-self: center;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+  `};
 `;
 
 export const GridContainer = styled.div`
-  width: 80%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 export const Cell = styled.div`
-  width: 50%;
+  box-sizing: border-box;
+  position: relative;
+  top: -40px;
+  width: 550px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: 4px ${colorPalette.primary1Color} solid;
-  margin: 20px;
-  padding: 20px;
+  margin-top: 40px;
+  padding: 30px;
   background-color: white;
+  ${media.lg`
+    width: 430px;
+  `};
+  ${media.md`
+    width: 320px;
+  `};
+  ${media.sm`
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  `};
+  ${media.xs`
+    padding: 30 20px;
+  `};
 `;
 
 
 export const LabelRow = styled.div`
   width: 100%;
   display: flex;
-  padding: 20px 20px 0;
+  align-items: center;
+  justify-content: center;
+  ${media.md`
+    flex-direction: column;
+  `};
 `;
 
 export const ImageLabel = styled.div`
@@ -57,10 +91,19 @@ export const ImageLabel = styled.div`
 `;
 
 export const TextLabel = styled.div`
-  width: 50%;
+  position: relative;
+  top: -7px;
   display: flex;
-  font-weight: bold;
   margin: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.3;
+  ${media.md`
+    text-align: center;
+  `};
+  ${media.md`
+    margin-bottom: 30px;
+  `};
 `;
 
 export const Description = styled.div`
@@ -68,32 +111,6 @@ export const Description = styled.div`
   display: flex;
   text-align: justify;
   text-justify: auto;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.4;
 `;
-
-
-export const Legend = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-`;
-
-
-export const LegendEtap = styled.div`
-  width: 100%;
-  justify-content: center;
-`;
-
-
-export const LegendLabel = styled.div`
-  width: 100%;
-  justify-content: center;
-`;
-
-
-export const LegendDescription = styled.div`
-  width: 50px;
-  height: 20px;
-  background-color: ${props => props.color};
-`;
-

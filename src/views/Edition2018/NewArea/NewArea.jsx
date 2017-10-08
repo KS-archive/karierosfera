@@ -14,7 +14,7 @@ export default class NewArea extends Component {
   handleClick = () => {
     const { value } = this.state;
     if (!value.trim()) {
-      this.setState({ error: 'E-mail jest wymagany' });
+      this.setState({ error: 'Musisz cokolwiek zaproponować' });
     } else {
       console.log('Wysłano');
     }
@@ -36,7 +36,7 @@ export default class NewArea extends Component {
           </Head>
           <Form>
             <Input
-              placeholder={error || 'Wpisz swój adres e-mail'}
+              placeholder={error || 'Wpisz proponowane dziedziny'}
               value={value}
               onChange={this.handleInputChange}
               isError={!!error}

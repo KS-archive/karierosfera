@@ -8,9 +8,9 @@ export default class Awards extends Component {
         <ContentWrapper>
           <Title>Nagrody</Title>
           <Content>
-            <strong>Karierosfera to prestiżowy, organizowany od kilkunastu lat ogólnopolski konkurs wiedzy biznesowej podzielony na wyspecjalizowane dziedziny. Każdy student może sprawdzić swoją wiedzę z tej dziedziny, która najbardziej mu odpowiada.</strong>
-            <br />Test internetowy, test pisemny i case study – tylko tyle dzieli uczestnika Karierosfery od osiągnięcia wymarzonego, zawodowego celu.
-            <br />Nagrodą główną są płatne staże w renomowanych i cenionych firmach, dzięki którym laureaci zyskają ogromne możliwości rozwoju oraz zdobycia cennego doświadczenia. Przede wszystkim jednak mają okazję zaprezentować się przedstawicielom prestiżowych firm podczas Gali Finałowej Konkursu.
+            <strong>Główną nagrodą w konkursie jest płatny staż w firmie patronującej dziedzinę.</strong>
+            <br />Dla finalistów przewidziane są również wartościowe nagrody rzeczowe oraz pieniężne.
+            <br />Cenne jest również zdobywane doświadczenie i wiedza.  Podchodząc do konkursu uczestnik poznaje oczekiwania firm względem potencjalnych pracowników.
           </Content>
         </ContentWrapper>
         <Image src="/img/o_konkursie/nagroda.svg" alt="Grafika prezentująca trofeum" />

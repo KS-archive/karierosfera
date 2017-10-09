@@ -22,7 +22,7 @@ export const companySection = {
 
 export const mapSection = {
   header: 'Karierosfera to największy w Polsce konkurs wiedzy biznesowej skierowany do studentow.',
-  content: 'Karierosfera to największy w Polsce konkurs wiedzy biznesowej skierowany do studentow.',
+  content: 'Jego trzyetapowa formuła pozwala wyłonić najlepszych studentów – pasjonatów, którzy wkrótce staną się specjalistami i będą tworzyli elitę swojej branży.',
 };
 
 export const tiles = [
@@ -39,7 +39,7 @@ export const tiles = [
   {
     image: '/img/partnerzy2017/rzetelna_selekcja.svg',
     title: 'Rzetelna selekcja',
-    description: 'Dzięki swojej trzyetapowej formule, Karierosfera zapewnia skuteczną selekcję uczestników. Partner ma bezpośredni wpływ na wygląd drugiego i trzeciego etapu, decyduje jakich cech i umiejętności poszukuje. Pozwala to dokładnie sprawdzić każdego kandydata, z elity ją tworzą finaliście projektu, co z kolei przekłada się na wybór laureata najbardziej wpisującego się w poszukiwany profil pracownika. Partner dziedzinowy otrzymuje też gotową, wyselekcjonowaną bazę przyszłych potencjalnych pracowników.',
+    description: 'Dzięki swojej trzyetapowej formule, Karierosfera zapewnia skuteczną selekcję uczestników. Partner ma bezpośredni wpływ na wygląd drugiego i trzeciego etapu, decyduje jakich cech i umiejętności poszukuje. Pozwala to dokładnie sprawdzić każdego kandydata, co z kolei przekłada się na wybór laureata najbardziej wpisującego się w poszukiwany profil pracownika. Partner dziedzinowy otrzymuje też gotową, wyselekcjonowaną bazę przyszłych potencjalnych pracowników.',
   },
   {
     image: '/img/partnerzy2017/elastyczne_warunki.svg',
@@ -49,7 +49,7 @@ export const tiles = [
   {
     image: '/img/partnerzy2017/p3.png',
     title: '17 lat doświadczenia',
-    description: 'Dzięki doświadczeniu zdobytemu podczas ponad 20-letniej działalności, Stowarzyszenie Studenckie Wiggor – organizator Karierosfery - cieszy się opinią odpowiedzialnego i sumiennego Partnera. Nasz konkurs realizowany jest już od ponad 17 lat, co pozwolilo wyeliminować wiele słabych stron i rozwijać te mocne. W trakcie konkursu, Wiggoracy dokładają wszelkich starań, aby realizacja projektu przyniosła wymierne i obupólne korzyści.',
+    description: 'Dzięki doświadczeniu zdobytemu podczas ponad 20-letniej działalności, Stowarzyszenie Studenckie Wiggor – organizator Karierosfery - cieszy się opinią odpowiedzialnego i sumiennego partnera. Nasz konkurs realizowany jest już od ponad 17 lat, co pozwolilo wyeliminować wiele słabych stron i rozwijać te mocne. W trakcie konkursu, Wiggoracy dokładają wszelkich starań, aby realizacja projektu przyniosła wymierne i obupólne korzyści.',
   },
 ];
 

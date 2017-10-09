@@ -8,9 +8,9 @@ export default class About extends Component {
         <ContentWrapper>
           <Title>O konkursie</Title>
           <Content>
-            <strong>Karierosfera to prestiżowy, organizowany od kilkunastu lat ogólnopolski konkurs wiedzy biznesowej podzielony na wyspecjalizowane dziedziny. Każdy student może sprawdzić swoją wiedzę z tej dziedziny, która najbardziej mu odpowiada.</strong>
-            <br />Test internetowy, test pisemny i case study – tylko tyle dzieli uczestnika Karierosfery od osiągnięcia wymarzonego, zawodowego celu.
-            <br />Nagrodą główną są płatne staże w renomowanych i cenionych firmach, dzięki którym laureaci zyskają ogromne możliwości rozwoju oraz zdobycia cennego doświadczenia. Przede wszystkim jednak mają okazję zaprezentować się przedstawicielom prestiżowych firm podczas Gali Finałowej Konkursu.
+            <strong>Karierosfera to Twoja szansa na postawienie pierwszych kroków w karierze zawodowej.</strong>
+            <br />Podczas 3 etapów zmagań w wybranej dziedzinie, studenci z całej Polski rywalizują o płatny staż.
+            <br />Realizacja stażu pozwala rozpocząć karierę zawodową z doświadczeniem cenionym podczas procesu rekrutacji. Co roku współpracujemy z renomowanymi firmami, aby dać uczestnikom okazję czerpania dobrych praktyk od najlepszych pracodawców oraz aby CV laureata Karierosfery wyróżniało się na tle innych.
           </Content>
         </ContentWrapper>
         <Image src="/img/o_konkursie/stopy.svg" alt="Grafika prezentująca kroki" />

@@ -23,17 +23,17 @@ export const stages = [
   {
     icon: '/img/etapy/1 etap rolok.png',
     title: 'Etap I - test internetowy',
-    content: 'Wybierz dziedzinę i wypełnij krótki test online.',
+    content: '10 minut i 10 pytań zamkniętych, dotyczących wybranej przez Ciebie dziedziny oraz ogólnej wiedzy ekonomicznej',
   },
   {
     icon: '/img/etapy/2 etap rolok.png',
     title: 'Etap II - test pisemny',
-    content: 'W wyznaczonym dniu przyjedź na jedną z uczelni partnerskich i rozwiąż test pisemny.',
+    content: '60 minut i 50 pytań zamkniętych, przygotowanych przez specjalistów z firmy oferującej staż dla laureata.',
   },
   {
     icon: '/img/etapy/3 etap rolok.png',
     title: 'Etap III - case study',
-    content: 'Odwiedź Wrocław, aby wziąć udział w finałowym case study i Gali Finałowej.',
+    content: '10 finalistów i grupowe zadania, stworzone i nadzorowane przez firmę patronującą dziedzinę.',
   },
 ];
 

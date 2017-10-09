@@ -104,7 +104,12 @@ export const contact = [
   },
   {
     icon: '/img/dla_ambasadorow/message.svg',
-    name: 'Ola Cichoń',
+    name: 'Aleksandra Cichoń',
     email: 'aleksandra.cichon@wiggor.pl',
+  },
+  {
+    icon: '/img/dla_ambasadorow/message.svg',
+    name: 'Mariusz Giemza',
+    email: 'mariusz.giemza@wiggor.pl',
   },
 ];

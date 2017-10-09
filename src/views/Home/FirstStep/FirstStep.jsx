@@ -62,7 +62,7 @@ export default class FirstStep extends Component {
             onChange={this.handleInputChange}
             isError={!!error}
           />
-          <Button onClick={this.handleClick}>Zapisz się na newsletter</Button>
+          <Button onClick={this.handleClick}>Zapisz się do newslettera</Button>
         </Form>
       </Container>
     );

@@ -21,7 +21,7 @@ export default class Emails extends Component {
   render() {
     return (
       <Container>
-        <Title>Masz pytania odnośnie neszych tegorocznych działań?</Title>
+        <Title>Masz pytania odnośnie naszych tegorocznych działań?</Title>
         <Subtitle>Napisz nam maila na</Subtitle>
         <Email href="mailto:kontakt@karierosfera.pl">kontakt@karierosfera.pl</Email>
         <Subtitle>odezwij się do jednego z naszych koordynatorów</Subtitle>

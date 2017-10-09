@@ -16,6 +16,9 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 // Analitics
 import ReactGA from 'react-ga';
 
+// WebFont Loader
+import WebfontLoader from '@dr-kobros/react-webfont-loader';
+
 // Redux
 import Provider from 'react-redux/lib/components/Provider';
 import applyMiddleware from 'redux/lib/applyMiddleware';
@@ -60,6 +63,13 @@ const muiTheme = getMuiTheme({
   },
 });
 
+// WebFont Loader configuration.
+const config = {
+  google: {
+    families: ['Roboto:400,500,700:latin,latin-ext'],
+  },
+};
+
 ReactGA.initialize('GTM-NM7RXM');
 const customHistory = createBrowserHistory();
 customHistory.listen((location) => {
@@ -70,21 +80,23 @@ customHistory.listen((location) => {
 
 ReactDOM.render(
   <MuiThemeProvider muiTheme={muiTheme}>
-    <Provider store={store}>
-      <Router history={customHistory}>
-        <div>
-          <Nav />
-          <Switch>
-            <Route path="/kontakt" component={Contact} />
-            <Route path="/faq" component={Faq} />
-            <Route path="/partnerzy" component={Partners} />
-            <Route path="/program_ambasadorski" component={Ambassadors} />
-            <Route path="/edycja2018" component={Edition2018} />
-            <Route path="/edycja2017" component={Edition2017} />
-            <Route path="/" component={Home} />
-          </Switch>
-          <Footer />
-        </div>
-      </Router>
-    </Provider>
+    <WebfontLoader config={config}>
+      <Provider store={store}>
+        <Router history={customHistory}>
+          <div>
+            <Nav />
+            <Switch>
+              <Route path="/kontakt" component={Contact} />
+              <Route path="/faq" component={Faq} />
+              <Route path="/partnerzy" component={Partners} />
+              <Route path="/program_ambasadorski" component={Ambassadors} />
+              <Route path="/edycja2018" component={Edition2018} />
+              <Route path="/edycja2017" component={Edition2017} />
+              <Route path="/" component={Home} />
+            </Switch>
+            <Footer />
+          </div>
+        </Router>
+      </Provider>
+    </WebfontLoader>
   </MuiThemeProvider>, document.querySelector('.container'));

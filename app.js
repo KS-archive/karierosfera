@@ -21,6 +21,7 @@ class Application{
     app.use('/', express.static(__dirname + '/public', {
       maxAge: config.STATIC_MAX_AGE
     }));
+    app.use('/', express.static(__dirname + '/build'));
     app.use(expressValidator({
       errorFormatter: function(param, msg, value) {
         var namespace = param.split('.')

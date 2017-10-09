@@ -70,7 +70,7 @@ module.exports = {
     }),
 
     new webpack.DefinePlugin({
-      __ROOT_URL__: JSON.stringify("https://node.konrisz96.usermd.net/"),
+      __ROOT_URL__: JSON.stringify("https://karierosfera.wiggor.pl/"),
     }),
 
     new ShakePlugin(),

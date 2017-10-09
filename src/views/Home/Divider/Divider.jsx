@@ -9,7 +9,7 @@ export default class Divider extends Component {
         <MainContainer>
           <Title>Zastanawiasz się czy Karierosfera jest dla Ciebie? Oczywiście że tak!</Title>
           <Content>
-            Nagrodą główną są płatne staże w renomowanych i cenionych firmach, dzięki którym laureaci zyskają ogromne możliwości rozwoju oraz zdobycia cennego doświadczenia. Przede wszystkim jednak mają okazję zaprezentować się przedstawicielom prestiżowych firm podczas Gali Finałowej Konkursu.
+            W całej Polsce, na każdej uczelni studiują dokładnie tacy studenci, jak Ty. Obiecują sobie systematyczną naukę, a potem zarywają noc przed egzaminem. Oglądają serial. Cały. Odcinek po odcinku. W jeden dzień. Planują prowadzić zdrowy tryb życia, a potem imprezują do białego rana i objadają się fastfoodami.
             <br />
             <strong>Studia to czas doświadczania. Zbieraj więc doświadczenia, również zawodowe.</strong>
           </Content>

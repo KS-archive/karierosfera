@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import connect from 'react-redux/lib/connect/connect';
+import bindActionCreators from 'redux/lib/bindActionCreators';
+import { addNotification } from '../../../actions/notifications';
 import validate from '../../../utils/validation';
 import { inputStyle } from '../../../utils/constants/styles';
 import { Container, Subtitle, Form, StyledTextField, Button } from './ContactForm_styles';
 
-export default class ContactForm extends Component {
+class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,6 +39,9 @@ export default class ContactForm extends Component {
           content: '',
           errors: {},
         });
+        this.props.addNotification('Wysłano', 'Twoja wiadomość została wysłana.', 'success');
+      }, () => {
+        this.props.addNotification('Wystąpił błąd', 'Twoja wiadomość nie została wysłana.', 'error');
       });
   }
 
@@ -85,3 +91,9 @@ export default class ContactForm extends Component {
     );
   }
 }
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ addNotification }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(ContactForm);

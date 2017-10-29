@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import connect from 'react-redux/lib/connect/connect';
+import bindActionCreators from 'redux/lib/bindActionCreators';
+import { addNotification } from '../../../actions/notifications';
 import { Container as MainContainer } from '../../../utils/constants/styledComponents';
 import { Container, Head, Title, Content, Form, Input, Button } from './NewArea_styles';
 
-export default class NewArea extends Component {
+class NewArea extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,6 +26,9 @@ export default class NewArea extends Component {
             value: '',
             error: '',
           });
+          this.props.addNotification('Wysłano', 'Twoja propozycja została wysłana', 'success');
+        }, () => {
+          this.props.addNotification('Wystąpil błąd', 'Twoja propozycja nie została wysłana. Spróbuj ponownie później', 'error');
         });
     }
   }
@@ -55,3 +61,9 @@ export default class NewArea extends Component {
     );
   }
 }
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ addNotification }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(NewArea);

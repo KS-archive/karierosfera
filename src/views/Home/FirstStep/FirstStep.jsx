@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import connect from 'react-redux/lib/connect/connect';
+import bindActionCreators from 'redux/lib/bindActionCreators';
+import { addNotification } from '../../../actions/notifications';
 import { Container, Head, ContentWrapper, Images, Image, Title, Content, Form, Input, Button } from './FirstStep_styles';
 
-export default class FirstStep extends Component {
+class FirstStep extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -22,6 +25,9 @@ export default class FirstStep extends Component {
             value: '',
             error: '',
           });
+          this.props.addNotification('Zapisano', 'Zostałeś zapisany na nasz newsletter', 'success');
+        }, () => {
+          this.props.addNotification('Wystąpił błąd', 'Zapis na newsletter nie powiódł się. Spróbuj ponownie później.', 'error');
         });
     }
   }
@@ -68,3 +74,9 @@ export default class FirstStep extends Component {
     );
   }
 }
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ addNotification }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(FirstStep);

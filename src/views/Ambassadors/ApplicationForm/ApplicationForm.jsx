@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import connect from 'react-redux/lib/connect/connect';
+import bindActionCreators from 'redux/lib/bindActionCreators';
+import { addNotification } from '../../../actions/notifications';
 import validate from '../../../utils/validation';
 import { inputStyle } from '../../../utils/constants/styles';
 import { Container, Title, Wrapper, StyledTextField, StyledCheckbox, CheckboxError, Button } from './ApplicationForm_styles';
 
-export default class ApplicationForm extends Component {
+class ApplicationForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -40,7 +43,6 @@ export default class ApplicationForm extends Component {
     if (!values.inOrganization) {
       values.organizationName = '';
     }
-    console.log(values);
     axios.post(`${__ROOT_URL__}api/mail/application`, values)
       .then(() => {
         this.setState({
@@ -56,6 +58,9 @@ export default class ApplicationForm extends Component {
           acceprReg: false,
           errors: {},
         });
+        this.props.addNotification('Wysłano', 'Twoje zgłoszenie zostało wysłane.', 'success');
+      }, () => {
+        this.props.addNotification('Wystąpił błąd', 'Twoje zgłoszenie nie zostało wysłane.', 'error');
       });
   }
 
@@ -139,3 +144,9 @@ export default class ApplicationForm extends Component {
     );
   }
 }
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ addNotification }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(ApplicationForm);

@@ -26,11 +26,8 @@ import createStore from 'redux/lib/createStore';
 import ReduxThunk from 'redux-thunk';
 import reducers from './reducers';
 
-// Components
-import Nav from './components/Nav/Nav';
-import Footer from './components/Footer/Footer';
-
 // Views
+import Index from './views/Index/Index';
 import Contact from './views/Contact/Contact';
 import Faq from './views/Faq/Faq';
 import Partners from './views/Partners/Partners';
@@ -73,7 +70,6 @@ const config = {
 ReactGA.initialize('GTM-NM7RXM');
 const customHistory = createBrowserHistory();
 customHistory.listen((location) => {
-  window.scrollTo(0, 0);
   ReactGA.set({ page: location.pathname });
   ReactGA.pageview(location.pathname);
 });
@@ -83,8 +79,7 @@ ReactDOM.render(
     <WebfontLoader config={config}>
       <Provider store={store}>
         <Router history={customHistory}>
-          <div>
-            <Nav />
+          <Index>
             <Switch>
               <Route path="/kontakt" component={Contact} />
               <Route path="/faq" component={Faq} />
@@ -94,8 +89,7 @@ ReactDOM.render(
               <Route path="/edycja2017" component={Edition2017} />
               <Route path="/" component={Home} />
             </Switch>
-            <Footer />
-          </div>
+          </Index>
         </Router>
       </Provider>
     </WebfontLoader>

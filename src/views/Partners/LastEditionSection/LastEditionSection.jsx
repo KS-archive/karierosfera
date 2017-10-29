@@ -3,8 +3,8 @@ import { numbers } from '../../../utils/content/partnerzy';
 import { Container, TopLabel, GridContainer, Cell, CellNumberLabel, CellDescription } from './LastEditionSection_styles';
 
 export default class ContactSection extends Component {
-  renderNumber = numberData => (
-    <Cell>
+  renderNumber = (numberData, index) => (
+    <Cell key={index}>
       <CellNumberLabel>{numberData.number}</CellNumberLabel>
       <CellDescription>{numberData.description}</CellDescription>
     </Cell>

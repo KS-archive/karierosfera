@@ -12,7 +12,9 @@ class Index extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.innerBody.scrollTop = 0;
+    if (this.props.location.pathname !== nextProps.location.pathname) {
+      this.innerBody.scrollTop = 0;
+    }
     const notification = nextProps.notifications[nextProps.notifications.length - 1];
     if (this.props.notifications !== nextProps.notifications) this.addNotification(notification);
   }

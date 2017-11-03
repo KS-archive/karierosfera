@@ -4,7 +4,7 @@ import CompanySection from './CompanySection/CompanySection';
 import MapSection from './MapSection/MapSection';
 import GridSection from './GridSection/GridSection';
 import LastEditionSection from './LastEditionSection/LastEditionSection';
-// import UserSection from './UserSection/UserSection';
+import Participant from './Participant/Participant';
 import ContactSection from './ContactSection/ContactSection';
 
 export default class Partners extends Component {
@@ -15,7 +15,7 @@ export default class Partners extends Component {
         <MapSection />
         <GridSection />
         <LastEditionSection />
-        {/* <UserSection /> */}
+        <Participant />
         <ContactSection />
       </Header>
     );

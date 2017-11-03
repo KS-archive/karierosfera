@@ -7,7 +7,7 @@ export const Container = MainContainer.extend`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 120px 0 60px;
+  margin: 60px 0;
   padding: 0 10%;
   color: #000;
   ${media.md`
@@ -71,7 +71,7 @@ export const Image = styled.img`
 
 export const Label = styled.div`
   width: 100%;
-  height: calc(100% - 200px);
+  height: calc(100% - 199px);
   display: flex;
   align-items: center;
   justify-content: center;

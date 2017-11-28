@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "",
   "scripts": {
-    "start": "npm run clean && webpack --config webpack.config.js --watch",
+    "start": "node app",
     "clean": "rimraf build",
     "build": "npm run clean && webpack --config webpack.config.prod.js -p"
   },

@@ -8,7 +8,7 @@ const config = require('./api/data/config');
 class Application{
   constructor(){
     this.app = express();
-    this.app.listen(3000, ()=>{
+    this.app.listen(process.env.PORT, ()=>{
       console.log('Server started.');
     });
     this.middleware();

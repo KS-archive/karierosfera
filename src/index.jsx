@@ -38,6 +38,7 @@ import Home from './views/Home/Home';
 
 // Main styles import.
 import { colorPalette } from './utils/constants/styles';
+import 'react-tippy/dist/tippy.css';
 import './styles.css';
 
 // Middleware

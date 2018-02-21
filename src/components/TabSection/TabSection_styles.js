@@ -14,6 +14,8 @@ export const Tab = styled.div`
   font-weight: 500;
   padding: 16px 32px 16px 24px;
   background-color: ${colorPalette.primary1Color};
+  text-align: center;
+  line-height: 1.2;
 `;
 
 export const Line = styled.div`

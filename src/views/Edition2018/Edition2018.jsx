@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import NewArea from './NewArea/NewArea';
-import FutureStages from './FutureStages/FutureStages';
+import Hero from './Hero/Hero';
 import { Container } from '../../utils/constants/styledComponents';
 
 export default class Edition2018 extends Component {
   render() {
     return (
       <div>
-        <NewArea />
+        <Hero />
         <Container>
-          <FutureStages />
+
         </Container>
       </div>
     );

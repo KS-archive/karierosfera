@@ -63,7 +63,7 @@ const muiTheme = getMuiTheme({
 // WebFont Loader configuration.
 const config = {
   google: {
-    families: ['Roboto:400,500,700:latin,latin-ext'],
+    families: ['Montserrat:400,500,700:latin,latin-ext'],
   },
 };
 

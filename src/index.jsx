@@ -38,6 +38,7 @@ import Home from './views/Home/Home';
 
 // Main styles import.
 import { colorPalette } from './utils/constants/styles';
+import 'react-tippy/dist/tippy.css';
 import './styles.css';
 
 // Middleware
@@ -63,7 +64,7 @@ const muiTheme = getMuiTheme({
 // WebFont Loader configuration.
 const config = {
   google: {
-    families: ['Roboto:400,500,700:latin,latin-ext'],
+    families: ['Montserrat:400,500,700:latin,latin-ext'],
   },
 };
 

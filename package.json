@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "",
   "scripts": {
-    "start": "node app",
+    "start": "npm run clean && webpack --config webpack.config.js --watch",
     "clean": "rimraf build",
     "build": "npm run clean && webpack --config webpack.config.prod.js -p"
   },
@@ -73,6 +73,7 @@
     "react-scroll": "^1.5.4",
     "react-slick": "^0.15.4",
     "react-tap-event-plugin": "^3.0.2",
+    "react-tippy": "^1.2.2",
     "react-tooltip": "^3.3.0",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",

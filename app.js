@@ -44,7 +44,7 @@ class Application{
     let app = this.app;
     app.use('/api/mail', new MailRouter());
     app.get('*', function(req, res){
-      res.sendfile(__dirname + '/public/index.html');
+      res.sendFile(__dirname + '/public/index.html');
     });
   };
 };

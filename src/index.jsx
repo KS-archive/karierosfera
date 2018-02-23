@@ -8,6 +8,10 @@ import Router from 'react-router-dom/Router';
 import createBrowserHistory from 'history/createBrowserHistory';
 import Switch from 'react-router-dom/Switch';
 
+// React-Dropdown
+import '@trendmicro/react-buttons/dist/react-buttons.css';
+import '@trendmicro/react-dropdown/dist/react-dropdown.css';
+
 // Material UI
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -35,6 +39,8 @@ import Ambassadors from './views/Ambassadors/Ambassadors';
 import Edition2018 from './views/Edition2018/Edition2018';
 import Edition2017 from './views/Edition2017/Edition2017';
 import Home from './views/Home/Home';
+import Offers from './views/Offers/Offers';
+import Offer from './views/Offers/Offer/Offer';
 
 // Main styles import.
 import { colorPalette } from './utils/constants/styles';
@@ -82,6 +88,8 @@ ReactDOM.render(
         <Router history={customHistory}>
           <Index>
             <Switch>
+              <Route path="/oferty/:miasto" component={Offer} />
+              <Route path="/oferty" component={Offers} />
               <Route path="/kontakt" component={Contact} />
               <Route path="/faq" component={Faq} />
               <Route path="/partnerzy" component={Partners} />

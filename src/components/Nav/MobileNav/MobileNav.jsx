@@ -4,10 +4,15 @@ import MenuItem from 'material-ui/MenuItem';
 import navigation from '../../../utils/content/navigation';
 import { StyledIconMenu, StyledIconButton } from './MobileNav_styles';
 
+
 @withRouter
 export default class MobileNav extends Component {
   handleSelect = (e, child) => {
     this.props.history.push(child.props.value);
+  };
+
+  static getWithChilds(item) {
+    return item.childs.map(child => <MenuItem key={child.path} value={child.path} primaryText={child.name} />)
   }
 
   render() {
@@ -25,7 +30,13 @@ export default class MobileNav extends Component {
         targetOrigin={origin}
         onItemTouchTap={this.handleSelect}
       >
-        {navigation.map(item => <MenuItem key={item.path} value={item.path} primaryText={item.name} />)}
+        {navigation.map(item => {
+          return item.childs ? (
+            MobileNav.getWithChilds(item)
+          ) : (
+            <MenuItem key={item.path} value={item.path} primaryText={item.name} />
+          )
+        })}
       </StyledIconMenu>
     );
   }

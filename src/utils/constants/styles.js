@@ -5,6 +5,7 @@ export const colorPalette = {
   primary2Color: '#FF9800',
   primary3Color: '#EE9942',
   accent1Color: '#333333',
+  accent1ColorRGBA: 'rgba(51, 51, 51, 1)',
   accent2Color: '#F2F2F2',
   accent3Color: '#757575',
   textColor: '#212121',
@@ -42,6 +43,10 @@ export const media = {
       ${css(...args)}
     }
   `,
+};
+
+export const breakpoints = {
+  xs: 540,
 };
 
 export const appBarHeight = 80;

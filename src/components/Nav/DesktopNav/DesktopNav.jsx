@@ -32,7 +32,7 @@ export default class DesktopNav extends Component {
               <StyledDropdownToggle title={item.name} />
               <StyledDropdownMenuWrapper />
               <StyledDropdownMenu>
-                {item.childs.map(child => this.renderMenuItem(child))}
+                {item.childs.map(child => DesktopNav.renderMenuItem(child))}
               </StyledDropdownMenu>
             </StyledDropdown>
           ) : (
